@@ -4,14 +4,140 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pop by the Polls</title>
-    <!-- link to style.css -->
+    <link rel="stylesheet" href="./css/style.css">
     <!-- link to script.js - make sure to defer -->
+    <script src="./js/script.js" defer></script>
   </head>
   <body>
     <!-- nav element goes here -->
+    <nav>
+      <a href="./index.html"><img src="./images/logo.jpg" alt="Logo"></a>
+      <img id="hamburger" src="./icons/menu.svg" alt="Menu">
+      <div id="overlay"></div>
+      <ul id="menu">
+        <li><a href="#issues">Issues</a></li>
+        <li><a href="#candidate">Candidate</a></li>
+        <li><a href="#polling-place">Polling Place</a></li>
+        <li><a href="#sample-ballot">Sample Ballot</a></li>
+      </ul>
+    </nav>
 
     <!-- main element goes here -->
+    <main>
+      <article>
+        <header class="grid-1-2">
+          <section>
+            <h1>Pop By The Polls</h1>
+            <p>This is a short research article for the 2020 eletion. It covers four issues currently being discussed, a candidate running for President of the United States, a polling place, and a sample ballot.</p>
+            <a href="#" title="Read About the Issues">Read More</a>
+          </section>
+          <figure>
+            <img src="./images/united-states.svg" alt="United States">
+          </figure>
+        </header>
 
+
+      <section id="issues">
+        <header>
+          <h2>Issues</h2>
+          <p>These are the issues that voters and candidates are discussing this election.</p>
+        </header>
+        <section class="grid-1-4">
+
+          <article class="card">
+            <figure><img src="./images/coronavirus.png" alt="Coronavirus"></figure>
+            <section>
+              <h3>Coronavirus</h3>
+              <p>Coronavirus continues to ravage the nation with over 200,000 dead.</p>
+            </section>
+          </article>
+          
+          <article class="card">
+            <figure><img src="./images/healthcare.jpg" alt="Healthcare"></figure>
+            <section>
+              <h3>Healthcare</h3>
+              <p>Many feel that healthcare in America is too expensive.</p>
+            </section>
+          </article>
+
+          <article class="card">
+            <figure><img src="./images/guncontrol.png" alt="Gun Control"></figure>
+            <section>
+              <h3>Gun Control</h3>
+              <p>High profile school shootings have made many question Americas love affair with firearms.</p>
+            </section>
+          </article>
+
+          <article class="card">
+            <figure><img src="./images/climate change.jpg" alt=""></figure>
+            <section>
+              <h3>Climate Change</h3>
+              <p>What can be done to stop global warming in its tracks?</p>
+            </section>
+          </article>
+
+        </section>
+      </section>
+
+      <section id="candidate">
+        <header>
+          <h2>Candidate</h2>
+          <p>This is a person that has been nominated as a general election candidate for President of the United States.</p>
+        </header>
+        <section>
+          <article class="card grid-1-2">
+            <figure><img src="./images/joe biden.jpg" alt="Joe Biden"></figure>
+            <section>
+              <h3>Joe Biden</h3>
+              <p>Joe Biden is the Democratic candidate for President of the United States with Kamala Harris as his running mate. Biden is running for the third time and this is his first time as a party nominee. As a candidate Biden supports a nationwide mask mandate, climate change reform, and expanding Obamacare while addng a public option. He's previously served as a US Senator from Delaware and as the Vice President to Barack Obama.</p>
+            </section>
+          </article>
+        </section>
+      </section>
+
+      <section id="polling-place">
+        <header>
+          <h2>Polling Place</h2>
+          <p>This is a location that voters can visit to cast a ballot for the candidates they prefer.</p>
+        </header>
+        <section>
+          <article class="card grid-1-2">
+            <figure><img src="./images/polling place.jpg" alt="Optimist Park in Raleigh NC"></figure>
+            <section>
+              <h3>Optimist Park</h3>
+              <p>Located in Northwest Raleigh near the intersection of Six Forks and Millbrook road, Optimist Park serves as the primary polling place in and around the Crabtree Valley area. Normally a gymnasium for youth basketball, the site serves as a polling place during elections.</p>
+            </section>
+          </article>
+        </section>
+      </section>
+      
+      <section id="sample-ballot">
+        <header>
+          <h2>Sample Ballot</h2>
+          <p>This is a document that potential voters can use to practice voting and to preview which candidates are up for election.</p>
+        </header>
+        <section>
+          <article class="card grid-1-2">
+            <figure><img src="./images/sample-ballot.jpg" alt="Sample Ballot"></figure>
+            <section>
+              <h3><a href="https://s3.amazonaws.com/ncsbesb/20201103/874_92_B0069.pdf">Wake County Sample Ballot </a></h3>
+              <p>This is a sample of a ballot from Wake County for the upcoming 2020 elections. Make sure to look it over and understand how to fill it out beofre you go vote. Any mistakes may result in your vote being discarded.</p>
+            </section>
+          </article>
+        </section>
+      </section>
+    </article>
+    </main>
+    <footer>
+      <p>
+        This website was made by 
+        <a href="/">Spencer Poole</a> 
+        in 
+        <a href="https://mejo187.com">Foundations of Interactive Media</a>
+        at
+        <a href="https://unc.edu">The University of North Carolina at Chapel Hill</a>.
+      </p>
+    </footer>
     <!-- footer element goes here -->
   </body>
 </html>
